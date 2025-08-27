@@ -4,7 +4,7 @@
   "description": "Droplets is a terminal screensaver",
   "main": "index.mjs",
   "bin": {
-    "droplets": "./index.mjs"
+    "droplets": "index.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
