@@ -1,6 +1,6 @@
 {
   "name": "droplets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Droplets is a terminal screensaver",
   "main": "index.mjs",
   "bin": {
