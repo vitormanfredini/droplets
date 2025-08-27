@@ -11,7 +11,7 @@ function make2dArray(width, height, defaultValue) {
     return arr;
 }
 
-function output2dArray(array){
+function generateOutput2dArray(array){
   let string = "";
   for(let i = 0; i < array.length; i++) {
     string += array[i].join('');
@@ -19,7 +19,7 @@ function output2dArray(array){
       string += "\n";
     }
   }
-  process.stdout.write(string)
+  return string;
 }
 
 function reflectPoint(point,min,max){
@@ -146,8 +146,9 @@ while(true){
 
   imageArray = applyAllDrops(imageArray, drops, 0.85);
 
+  const output = generateOutput2dArray(imageArray);
   console.clear()
-  output2dArray(imageArray);
+  process.stdout.write(output)
 
   await sleep(40)
 
