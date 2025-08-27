@@ -127,8 +127,7 @@ function getMaxDistance(){
   if(calculatedMaxDistance > 0){
     return calculatedMaxDistance;
   }
-  // calculatedMaxDistance = distanceBetweenPoints(0,0,process.stdout.columns*2,process.stdout.rows*2);
-  calculatedMaxDistance = distanceBetweenPoints(0,0,process.stdout.columns,process.stdout.rows);
+  calculatedMaxDistance = distanceBetweenPoints(0,0,process.stdout.columns*2,process.stdout.rows*2);
   return calculatedMaxDistance;
 }
 
