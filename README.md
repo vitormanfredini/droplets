@@ -1,3 +1,3 @@
 # Droplets is a terminal screensaver
 
-Just run: `npx droplets` and enjoy.
+Just run `npx droplets` and enjoy the rain falling on your screen.
