@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 function make2dArray(width, height, defaultValue) {
     var arr = [];
     for(let i = 0; i < height; i++) {

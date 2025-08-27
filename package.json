@@ -1,0 +1,29 @@
+{
+  "name": "droplets",
+  "version": "1.0.0",
+  "description": "Droplets is a terminal screensaver",
+  "main": "index.mjs",
+  "bin": {
+    "droplets": "./index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitormanfredini/droplets.git"
+  },
+  "keywords": [
+    "terminal",
+    "cli",
+    "screensaver",
+    "rain",
+    "mood"
+  ],
+  "author": "Vítor Manfredini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitormanfredini/droplets/issues"
+  },
+  "homepage": "https://github.com/vitormanfredini/droplets#readme"
+}
