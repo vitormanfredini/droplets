@@ -34,13 +34,9 @@ function reflectPoint(point,min,max){
 
 function applyDrop(array, dropX, dropY, distance, threshold, charToUse){
 
-  // let iMin = -process.stdout.rows+1;
-  // let iMax = array.length + process.stdout.rows-1;
   let iMin = Math.max(-process.stdout.rows+1,dropY-Math.ceil(distance));
   let iMax = Math.min(array.length + process.stdout.rows-1,dropY+Math.ceil(distance));
 
-  // let jMin = -process.stdout.columns+1;
-  // let jMax = array[0].length + process.stdout.columns-1;
   let jMin = Math.max(-process.stdout.columns+1,dropX-Math.ceil(distance));
   let jMax = Math.min(array[0].length + process.stdout.columns-1,dropX+Math.ceil(distance));
 
@@ -53,13 +49,6 @@ function applyDrop(array, dropX, dropY, distance, threshold, charToUse){
         ][
           reflectPoint(j,0,process.stdout.columns)
         ] = charToUse;
-        // if(i < 0 || i >= process.stdout.rows){
-        //   continue;
-        // }
-        // if(j < 0 || j >= process.stdout.columns){
-        //   continue;
-        // }
-        // array[i][j] = charToUse;
       }
     }
   }
